@@ -1,0 +1,98 @@
+.button-buy-now {
+  @extend %flex;
+  gap: 7px;
+  min-width: 152px;
+  height: 42px;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  outline: transparent;
+  background-color: var(--chicken);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+    color: var(--light);
+  }
+}
+
+.button-buy-now__text {
+  @include font(600, 14px, 1.21);
+  letter-spacing: 0;
+}
+
+.button-buy-now__icon {
+  fill: currentColor;
+}
+
+.button-products {
+  @extend %flex;
+  min-width: 62px;
+  height: 24px;
+  border: 2px solid var(--chicken);
+  border-radius: 8px;
+  padding: 7px 8px;
+  outline: transparent;
+
+  @include font(600, 8px, 1.25);
+  letter-spacing: 0;
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--hover);
+    color: var(--light);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 134px;
+    height: 42px;
+    border-radius: 10px;
+    padding: 12px 32px;
+    @include font(600, 14px, 1.29);
+  }
+}
+
+.button-how-its-made {
+  @extend %flex;
+  min-width: 83px;
+  height: 24px;
+  padding: 7px 8px;
+
+  color: var(--chicken);
+
+  @include font(600, 8px, 1.25);
+  text-decoration: underline;
+  letter-spacing: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 154px;
+    height: 40px;
+    padding: 12px 21px;
+    @include font(600, 14px, 1.21);
+  }
+}
+
+.button-arrow {
+  padding: 0;
+  line-height: 0;
+  border: none;
+  background: transparent;
+}
+
+.button-arrow__icon {
+  width: 80px;
+  height: 40px;
+
+  .button-arrow:hover & {
+    transform: scaleX(1.25) translateX(4px);
+  }
+
+  .button-arrow:focus & {
+    transform: scale(1.25) translate(4px);
+  }
+}
