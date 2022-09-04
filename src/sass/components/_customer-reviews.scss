@@ -1,0 +1,136 @@
+.customer-reviews-section {
+  padding-top: 180px;
+  padding-bottom: 394px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews-section {
+    padding-top: 218px;
+    padding-bottom: 383px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews-section {
+    padding-top: 450px;
+    padding-bottom: 207px;
+  }
+}
+
+.slider-track {
+  width: 100%;
+  position: relative;
+}
+
+.slider-track__btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-track__btn {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  #btn-prev,
+  #btn-next {
+    position: absolute;
+    top: 127px;
+    height: 138px;
+    width: 375px;
+    opacity: 0;
+    cursor: pointer;
+    border: 0;
+  }
+
+  #btn-prev {
+    left: 0;
+  }
+
+  #btn-next {
+    right: 0;
+  }
+}
+
+.slide.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide {
+  display: none;
+}
+.review {
+  display: block;
+  padding: 34px 39px;
+  background-color: var(--khaki);
+  border-radius: 24px;
+  margin-top: 32px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  line-height: 2.55;
+  font-size: 12px;
+  color: var(--light);
+}
+@media screen and (min-width: 768px) {
+  .review {
+    width: 705px;
+    padding: 29px 80px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review {
+    width: 968px;
+    padding: 39px 109px 47px;
+    font-size: 16px;
+    margin-top: 32px;
+  }
+}
+
+.reviewer-inf {
+  margin-top: 0;
+  margin-bottom: 32px;
+  @include font(500, 20px, 1.86);
+  color: var(--darkest);
+}
+
+@media screen and (min-width: 768px) {
+  .reviewer-inf {
+    font-size: 16px;
+  }
+}
+
+.slider-track__dots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  display: inline-block;
+  background-color: #d9d9d9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.dot.active {
+  background-color: var(--khaki);
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+.slide__img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
