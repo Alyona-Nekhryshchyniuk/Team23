@@ -1,11 +1,76 @@
+// transition: background-color 250ms linear;
+
 .about {
+  padding-top: 60px;
+  padding-bottom: 42px;
   background-color: var(--khaki);
+
+  text-align: center;
+  font-family: 'Montserrat';
+  letter-spacing: 0.04em;
+  color: var(--light);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    // @include font($fw: 700, $fs: 18px, $lh: 22px);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    // @include font($fw: 400, $fs: 30px, $lh: 38px);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 32px;
+  }
+
+  &__desc {
+    // @include font($fw: 400, $fs: 12px, $lh: 21px);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+
+    &--first-position {
+      margin-bottom: 4px;
+    }
+    &--second-position {
+      margin-bottom: 20px;
+    }
+
+    &--third-position {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cow {
   width: 279px;
   height: 279px;
   position: relative;
+
+  margin-bottom: 62px;
 
   &__bg {
     width: 100%;
@@ -27,20 +92,29 @@
 }
 
 .button {
-  position: relative;
   display: block;
-  max-width: 164px;
+  width: 164px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: auto;
-  padding-right: auto;
   background-color: var(--orange);
   border-color: transparent;
   border-radius: 10px;
 
-  &__svg {
-    position: absolute;
-    width: 12px;
-    height: 12px;
+  text-align: center;
+
+  // @include font($fw: 600, $fs: 14px, $lh: 18px);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--darkest);
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+  }
+  &:focus {
+    color: var(--light);
   }
 }
