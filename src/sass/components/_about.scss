@@ -10,10 +10,16 @@
   letter-spacing: 0.04em;
   color: var(--light);
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 52px;
+  }
+
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__subtitle {
@@ -36,32 +42,85 @@
     text-transform: uppercase;
 
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
-  &__desc {
+  &__wrapper {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      gap: 100px;
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    margin-top: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+
+  &__text {
     // @include font($fw: 400, $fs: 12px, $lh: 21px);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.75;
 
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+
     &--first-position {
       margin-bottom: 4px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+      }
     }
     &--second-position {
-      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+      }
     }
 
     &--third-position {
       @media screen and (max-width: 767px) {
         display: none;
       }
-    }
-  }
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
+      }
+    }
   }
 }
 
@@ -72,11 +131,32 @@
 
   margin-bottom: 62px;
 
+  @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 330px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+  }
+
   &__bg {
     width: 100%;
     height: 100%;
     background-color: var(--orange);
     border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      height: 490px;
+    }
   }
 
   &__image {
@@ -88,6 +168,20 @@
     background-image: url('../images/phone-cow.jpg');
     background-size: cover;
     border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      top: 26px;
+      width: 335px;
+      height: 330px;
+      background-image: url('../images/tablet-cow.jpg');
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 39px;
+      width: 490px;
+      height: 490px;
+      background-image: url('../images/pc-cow.jpg');
+    }
   }
 }
 
@@ -96,7 +190,7 @@
   width: 164px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: var(--orange);
+  background-color: var(--chicken);
   border-color: transparent;
   border-radius: 10px;
 
