@@ -1,6 +1,6 @@
 .hero {
   padding-top: 110px;
-  height: 502px;
+  padding-bottom: 229px;
 
   background-color: var(--khaki);
   background-image: url(../images/hero/phone-dots.png);
@@ -11,7 +11,6 @@
 
 .hero__container {
   position: relative;
-  height: 100%;
 }
 
 .hero-info {
@@ -21,8 +20,6 @@
 
 .hero-title {
   width: 247px;
-  margin-bottom: 32px;
-  text-align: left;
 
   letter-spacing: 0;
   font-family: 'Seymour One';
@@ -31,8 +28,12 @@
   text-transform: uppercase;
 }
 
+.hero-info__hero-title {
+  margin-bottom: 32px;
+}
+
 .hero-title_large {
-  @include font(400, 33px, 0.54);
+  font-size: 33px;
 }
 
 .hero-link-list {
@@ -61,7 +62,7 @@
 
 .hero-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -229px;
   z-index: 5;
 
   @keyframes translate {
@@ -184,19 +185,22 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 94px;
-    height: 415px;
+    padding-bottom: 18px;
     background-image: url(../images/hero/tablet-dots.png);
   }
 
-  .hero-info {
+  .hero__hero-info {
     margin-bottom: 28px;
   }
 
   .hero-title {
     padding-top: 10px;
-    margin-bottom: 20px;
     width: 181px;
     @include font(400, 18px, 1.28);
+  }
+
+  .hero-info__hero-title {
+    margin-bottom: 20px;
   }
 
   .hero-title_large {
@@ -208,6 +212,7 @@
 
   .hero-bg {
     right: 100px;
+    bottom: -18px;
   }
 
   .hero-bg__icon {
@@ -237,20 +242,23 @@
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 118px;
-    height: 664px;
+    padding-bottom: 68px;
     background-image: url(../images/hero/pc-dots.png);
   }
 
-  .hero-info {
+  .hero__hero-info {
     margin-bottom: 40px;
   }
 
   .hero-title {
-    padding-top: 0;
-    margin-bottom: 28px;
     width: 367px;
+    padding-top: 0;
     letter-spacing: 0.04em;
     @include font(400, 38px, 1.26);
+  }
+
+  .hero-info__hero-title {
+    margin-bottom: 28px;
   }
 
   .hero-title_large {
@@ -267,7 +275,7 @@
   }
 
   .hero-info-list__number {
-    @include font(900, 46px, 1.22);
+    font-size: 46px;
   }
 
   .hero-info-list__text {
@@ -276,6 +284,7 @@
 
   .hero-bg {
     right: 102px;
+    bottom: -65px;
   }
 
   .hero-bg__icon {
