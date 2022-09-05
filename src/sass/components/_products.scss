@@ -88,12 +88,9 @@
     }
 
     .product-label {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 800;
-            font-size: 18px;
+        font-size: 18px;
         line-height: 1.22;
-        letter-spacing: 0.04em;
         text-transform: uppercase;
     
         color: var(--darkest);
@@ -101,9 +98,8 @@
         margin-bottom: 12px;
     }
 
-    .product-subtitle {
+    .product-title {
         font-family: 'Seymour One';
-        font-style: normal;
         font-weight: 400;
         font-size: 30px;
         line-height: 1.23;
@@ -140,17 +136,14 @@
         left: 40px;
     }
 
-    .product-item__subtitle {
+    .product-item__title {
         padding-top: 123px;
         text-align: center;
         text-transform: uppercase;
     
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
-        letter-spacing: 0.04em;
     
         color: var(--dark);
     }
@@ -163,15 +156,11 @@
         display: block;
         height: 150px;
     
-    
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.78;
     
         text-align: center;
-        letter-spacing: 0.04em;
     
         color: var(--dark);
     }
@@ -240,9 +229,8 @@
         line-height: 1.18;
     }
 
-    .product-subtitle {
+    .product-title {
         font-size: 34px;
-        line-height: 1.23;
     }
 
     .product-list {
@@ -266,7 +254,7 @@
         left: 12px;
     }
 
-    .product-item__subtitle {
+    .product-item__title {
         padding-top: 108px;
 
         font-size: 22px;
@@ -326,7 +314,7 @@
         line-height: 1.2;
     }
 
-    .product-subtitle {
+    .product-title {
         font-size: 36px;
         line-height: 1.25;
     }
@@ -360,7 +348,7 @@
         left: 34px;
     }
 
-    .product-item__subtitle {
+    .product-item__title {
         padding-top: 166px;
 
         font-size: 30px;
