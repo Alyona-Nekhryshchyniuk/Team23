@@ -2,12 +2,14 @@
   max-width: 1600px;
   background-color: var(--khaki);
   padding-bottom: 60px;
+  margin-top: -1px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 204px;
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 61px;
     padding-bottom: 180px;
   }
 
@@ -38,6 +40,11 @@
       width: 230px;
     }
 
+    @media screen and (max-width: 767px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
     @media screen and (min-width: 768px) {
       justify-content: center;
       width: 152px;
@@ -48,10 +55,11 @@
     }
   }
 
-  &__svg {
+  &__wrapper {
+    @extend %flex;
     width: 50px;
     height: 50px;
-    background-color: var(--orange);
+    background-color: var(--chicken);
     border-radius: 50%;
     margin-bottom: 16px;
 
@@ -88,7 +96,7 @@
     }
   }
 
-  &__subtitle {
+  &__text {
     font-family: 'Montserrat';
     @include font($fw: 700, $fs: 12px, $lh: 1.18);
 
