@@ -145,6 +145,11 @@
   letter-spacing: 0;
   @include font(400, 12px, 1.4);
   color: var(--lightest);
+
+  &.modified {
+    width: 230px;
+    font-size: 15px;
+  }
 }
 
 .hero-content__button {
@@ -321,6 +326,12 @@
   .hero-content__text {
     width: 200px;
     @include font(400, 14px, 1.43);
+
+    &.modified {
+      width: 360px;
+      font-size: 18px;
+      line-height: 1.48;
+    }
   }
 
   .hero-content__button {
