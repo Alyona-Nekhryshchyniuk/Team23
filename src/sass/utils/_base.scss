@@ -1,7 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   letter-spacing: 0.04em;
   color: var(--darkest);
+  border-radius: 10px;
+
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 ul {
@@ -34,7 +43,7 @@ img {
 }
 
 // For hiddden section heading
-.hidden-heading {
+.visually-hidden {
   position: absolute;
   border: 0;
   width: 1px;
