@@ -59,7 +59,7 @@
   align-items: center;
   gap: 32px;
 
-  margin-bottom: 40px;
+  margin-bottom: 111px;
 }
 
 .mobile-menu-nav__link {
@@ -70,10 +70,6 @@
   @media screen and (max-width: 300px) {
     @include font(700, 24px, 1.25);
   }
-}
-
-.mobile-menu-nav__link_dark {
-  color: var(--darkest);
 }
 
 @media screen and (min-width: 768px) {
