@@ -1,3 +1,9 @@
+@import './utils/base';
+@import './utils/variables';
+@import './utils/directives';
+@import './utils/buttons';
+@import './utils/modules';
+
 @import './common';
 @import './components/container';
 @import './components/header';
@@ -15,9 +21,3 @@
 @import './components/read-more-modal';
 @import './components/location-modal';
 @import './components/franchise-modal';
-
-@import './utils/base';
-@import './utils/variables';
-@import './utils/directives';
-@import './utils/buttons';
-@import './utils/modules';
