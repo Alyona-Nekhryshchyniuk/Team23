@@ -6,20 +6,10 @@
   background-color: var(--khaki);
 
   text-align: center;
-  font-family: 'Montserrat';
-  letter-spacing: 0.04em;
   color: var(--light);
 
   @media screen and (min-width: 768px) {
     padding-bottom: 52px;
-  }
-
-  &__container {
-    @media screen and (max-width: 1199px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
   &__subtitle {
@@ -57,7 +47,6 @@
     }
 
     @media screen and (min-width: 768px) {
-      flex-direction: row;
       gap: 32px;
     }
 
@@ -75,12 +64,16 @@
 
   @media screen and (min-width: 768px) {
     align-items: flex-start;
-    margin-top: 39px;
   }
   @media screen and (min-width: 1200px) {
     width: 463px;
   }
 
+  &--main-pos {
+    @media screen and (min-width: 768px) {
+      margin-top: 39px;
+    }
+  }
   &__text {
     // @include font($fw: 400, $fs: 12px, $lh: 21px);
     font-weight: 400;
