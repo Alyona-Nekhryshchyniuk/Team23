@@ -4,7 +4,11 @@
   padding-top: 60px;
   padding-bottom: 42px;
   background-color: var(--khaki);
-
+  // background-image: url(../images/about/phone-cow.jpg),
+  //   url(../images/about/about-bg.png);
+  // background-size: 279px 279px, 279px 279px;
+  // background-position: left 18px top 275px, left 18px top 236px;
+  // background-repeat: no-repeat;
   text-align: center;
   color: var(--light);
 
@@ -43,6 +47,7 @@
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
     }
 
