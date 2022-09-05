@@ -196,10 +196,7 @@
 
   text-align: center;
 
-  // @include font($fw: 600, $fs: 14px, $lh: 18px);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
+  @include font($fw: 600, $fs: 14px, $lh: 1.29);
   color: var(--darkest);
 
   transition: background-color 250ms linear, color 250ms linear;
