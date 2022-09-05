@@ -1,12 +1,9 @@
 .button-buy-now {
   @extend %flex;
-  gap: 7px;
-  min-width: 152px;
-  height: 42px;
+  gap: 11px;
   padding: 12px 34px;
   border: none;
   border-radius: 10px;
-  outline: transparent;
   background-color: var(--chicken);
 
   &::after {
@@ -20,6 +17,7 @@
 
   &:hover,
   &:focus {
+    outline: transparent;
     background-color: var(--hover);
     color: var(--light);
 
@@ -41,36 +39,30 @@
 
 .button-products {
   @extend %flex;
-  min-width: 62px;
-  height: 24px;
   border: 2px solid var(--chicken);
   border-radius: 8px;
-  padding: 7px 8px;
-  outline: transparent;
+  padding: 5px 11px;
 
   @include font(600, 8px, 1.25);
   letter-spacing: 0;
 
   &:hover,
   &:focus {
+    outline: transparent;
     border: 2px solid var(--hover);
     color: var(--light);
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 134px;
-    height: 42px;
     border-radius: 10px;
-    padding: 12px 32px;
+    padding: 10px 32px;
     @include font(600, 14px, 1.29);
   }
 }
 
 .button-how-its-made {
   @extend %flex;
-  min-width: 83px;
-  height: 24px;
-  padding: 7px 8px;
+  padding: 7px 11px;
 
   color: var(--chicken);
 
@@ -84,8 +76,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 154px;
-    height: 40px;
     padding: 12px 21px;
     @include font(600, 14px, 1.21);
   }
