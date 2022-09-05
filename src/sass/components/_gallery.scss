@@ -13,11 +13,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .gallery:hover .swiper-button-prev {
-    opacity: 1;
-  }
-
-  .gallery:hover .swiper-button-next {
-    opacity: 1;
-  }
+  .gallery:hover .swiper-button-prev,
+  .gallery:hover .swiper-button-next{
+      opacity: 1;
+    }
 }
