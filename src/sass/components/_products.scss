@@ -1,9 +1,40 @@
-
 .products {
     background-position: center;
     background-size: cover;
-    
+
     padding-top: 60px;
+
+    background-image: url(/src/images/products/phone-product-background.jpg);
+    padding-bottom: 80px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .products {
+        background-image: url(/src/images/products/phone-product-background@2x.jpg);
+    }
+}
+
+.product-label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    color: var(--darkest);
+
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .product-header {
@@ -13,26 +44,86 @@
     align-items: center;
 }
 
+.product-list__item__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
 
-.product-item::before {
+.product-list {
+    margin-top: 148px;
+    display: flex;
+}
+
+.product-list__item {
+    width: 280px;
+    border-radius: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+
+.product-list__item__title {
+    padding-top: 123px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--dark);
+}
+
+
+.product-list__item__descr {
+    display: block;
+    height: 150px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.78;
+
+    text-align: center;
+
+    color: var(--dark);
+}
+
+.product-list__item::before {
     content: " ";
     border-radius: 50%;
     position: absolute;
-    
+
     z-index: 10;
+
+    width: 200px;
+    height: 200px;
+
+    top: -108px;
+    left: 40px;
+
+    background-size: cover;
+    background-position: center;
 }
 
-.product-item::after {
+.product-list__item::after {
     content: " ";
     border-radius: 50%;
 
     position: absolute;
-    
+
     z-index: 9;
+
+    width: 200px;
+    height: 200px;
+
+    top: -96px;
+    left: 40px;
 }
 
 
-.product-item.first {
+.product-list__item.product-list__item__first {
     background-color: var(--ice-cream);
 
     &::after {
@@ -42,7 +133,7 @@
 }
 
 
-.product-item.second {
+.product-list__item.product-list__item__second {
     background-color: var(--orange);
 
     &::after {
@@ -51,7 +142,7 @@
     }
 }
 
-.product-item.third {
+.product-list__item.product-list__item__third {
     background-color: var(--bright);
 
     &::after {
@@ -60,157 +151,66 @@
     }
 }
 
-.product-item__link {
+.product-list__item.product-list__item__first::before {
+    background-image: url(/src/images/products/phone-products-icecream.jpg);
+}
+
+.product-list__item.product-list__item__second::before {
+    background-image: url(/src/images/products/phone-products-icecoffee.jpg);
+}
+
+.product-list__item.product-list__item__third::before {
+    background-image: url(/src/images/products/phone-products-milkshakes.jpg);
+}
+
+
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .product-list__item.product-list__item__first::before {
+        background-image: url(/src/images/products/phone-products-icecream@2x.jpg);
+    }
+
+    .product-list__item.product-list__item__second::before {
+        background-image: url(/src/images/products/phone-products-icecoffee@2x.jpg);
+    }
+
+    .product-list__item.product-list__item__third::before {
+        background-image: url(/src/images/products/phone-products-milkshakes@2x.jpg);
+    }
+}
+
+
+.product-list__item__link {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    border: 0;
+    background: transparent;
 }
 
-.product-item__arrow {
+.product-list__item__arrow {
     width: 40px;
     height: 40px;
 }
 
-.product-item::before {
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-// -----------------Phone----------------
-
-@media screen and (min-width: 480px) {
-    
-    .products {
-        background-image: url(/src/images/products/phone-product-background.jpg);
-        padding-bottom: 80px;
-    }
-
-    .product-label {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.22;
-        text-transform: uppercase;
-    
-        color: var(--darkest);
-
-        margin-bottom: 12px;
-    }
-
-    .product-title {
-        font-family: 'Seymour One';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 1.23;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
-
-    .product-list {
-        margin-top: 148px;
-        display: flex;
-    }
-
-    .product-item {
-        width: 280px;
-        border-radius: 24px;
-        padding-left: 40px;
-        padding-right: 40px;
-        position: relative;
-    }
-    
-    .product-item::before {
-        width: 200px;
-        height: 200px;
-        
-        top: -108px;
-        left: 40px;
-    }
-
-    .product-item::after {
-        width: 200px;
-        height: 200px;
-
-        top: -96px;
-        left: 40px;
-    }
-
-    .product-item__title {
-        padding-top: 123px;
-        text-align: center;
-        text-transform: uppercase;
-    
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.2;
-    
-        color: var(--dark);
-    }
-
-    .product-item__wrapper {
-        margin-top: 40px;
-    }
-
-    .product-item__descr {
-        display: block;
-        height: 150px;
-    
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.78;
-    
-        text-align: center;
-    
-        color: var(--dark);
-    }
 
 
 
 
-    .product-item.first::before {
-        background-image: url(/src/images/products/phone-products-icecream.jpg);
-    }
 
-    .product-item.second::before {
-        background-image: url(/src/images/products/phone-products-icecoffee.jpg);
-    }
+@media screen and (max-width: 767px) {
 
-    .product-item.third::before {
-        background-image: url(/src/images/products/phone-products-milkshakes.jpg);
-    }
-
-
-
-    @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .product-item.first::before {
-                background-image: url(/src/images/products/phone-products-icecream@2x.jpg);
-            }
-
-            .product-item.second::before {
-                background-image: url(/src/images/products/phone-products-icecoffee@2x.jpg);
-            }
-
-            .product-item.third::before {
-                background-image: url(/src/images/products/phone-products-milkshakes@2x.jpg);
-            }
-    }
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    
-    .product-item:not(:first-child) {
+    .product-list__item:not(:first-child) {
         margin-top: 150px;
     }
 
     .product-list {
-    
-    flex-direction: column;
-    align-items: center;
+
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -223,6 +223,15 @@
         background-image: url(/src/images/products/tablet-product-background.jpg);
         padding-bottom: 80px;
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .products {
+                background-image: url(/src/images/products/tablet-product-background@2x.jpg);
+            }
+        }
 
     .product-label {
         font-size: 22px;
@@ -238,65 +247,65 @@
         gap: 16px;
     }
 
-    .product-item {
+    .product-list__item {
         width: 224px;
         padding-left: 26px;
         padding-right: 26px;
     }
 
-    .product-item::before {
+    .product-list__item::before {
         top: -120px;
         left: 12px;
     }
-    
-    .product-item::after {
+
+    .product-list__item::after {
         top: -110px;
         left: 12px;
     }
 
-    .product-item__title {
+    .product-list__item__title {
         padding-top: 108px;
 
         font-size: 22px;
         line-height: 1.23;
     }
 
-    .product-item__descr {
+    .product-list__item__descr {
         height: 175px;
-        
+
     }
 
 
 
-    .product-item.first::before {
+    .product-list__item.product-list__item__first::before {
         background-image: url(/src/images/products/tablet-products-icecream.jpg);
     }
 
-    .product-item.second::before {
+    .product-list__item.product-list__item__second::before {
         background-image: url(/src/images/products/tablet-products-icecoffee.jpg);
     }
 
-    .product-item.third::before {
+    .product-list__item.product-list__item__third::before {
         background-image: url(/src/images/products/tablet-products-milkshakes.jpg);
     }
 
 
 
     @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .product-item.first::before {
-                background-image: url(/src/images/products/tablet-products-icecream@2x.jpg);
-            }
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-list__item.product-list__item__first::before {
+            background-image: url(/src/images/products/tablet-products-icecream@2x.jpg);
+        }
 
-            .product-item.second::before {
-                background-image: url(/src/images/products/tablet-products-icecoffee@2x.jpg);
-            }
+        .product-list__item.product-list__item__second::before {
+            background-image: url(/src/images/products/tablet-products-icecoffee@2x.jpg);
+        }
 
-            .product-item.third::before {
-                background-image: url(/src/images/products/tablet-products-milkshakes@2x.jpg);
-            }
+        .product-list__item.product-list__item__third::before {
+            background-image: url(/src/images/products/tablet-products-milkshakes@2x.jpg);
+        }
     }
 }
 
@@ -307,6 +316,15 @@
     .products {
         background-image: url(/src/images/products/product-background.jpg);
         padding-bottom: 60px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .products {
+            background-image: url(/src/images/products/product-background@2x.jpg);
+        }
     }
 
     .product-label {
@@ -324,15 +342,15 @@
         gap: 32px;
     }
 
-    .product-item {
+    .product-list__item {
         width: 368px;
-        
+
         padding-right: 63px;
         padding-left: 63px;
         padding-bottom: 40px;
     }
-    
-    .product-item::before {
+
+    .product-list__item::before {
         width: 300px;
         height: 300px;
 
@@ -340,7 +358,7 @@
         left: 34px;
     }
 
-    .product-item::after {
+    .product-list__item::after {
         width: 300px;
         height: 300px;
 
@@ -348,18 +366,19 @@
         left: 34px;
     }
 
-    .product-item__title {
+    .product-list__item__wrapper {
+        margin-top: 65px;
+    }
+
+    .product-list__item__title {
         padding-top: 166px;
 
         font-size: 30px;
         line-height: 1.23;
     }
-        
-    .product-item__wrapper {
-        margin-top: 65px;
-    }
 
-    .product-item__descr {
+
+    .product-list__item__descr {
         height: 140px;
         font-size: 16px;
         line-height: 1.76;
@@ -368,34 +387,34 @@
 
 
 
-    .product-item.first::before {
+    .product-list__item.product-list__item__first::before {
         background-image: url(/src/images/products/pc-products-icecream.jpg);
     }
 
-    .product-item.second::before {
+    .product-list__item.product-list__item__second::before {
         background-image: url(/src/images/products/pc-products-icecoffee.jpg);
     }
 
-    .product-item.third::before {
+    .product-list__item.product-list__item__third::before {
         background-image: url(/src/images/products/pc-products-milkshakes.jpg);
     }
 
 
 
     @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .product-item.first::before {
-                background-image: url(/src/images/products/pc-products-icecream@2x.jpg);
-            }
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .product-list__item.product-list__item__first::before {
+            background-image: url(/src/images/products/pc-products-icecream@2x.jpg);
+        }
 
-            .product-item.second::before {
-                background-image: url(/src/images/products/pc-products-icecoffee@2x.jpg);
-            }
+        .product-list__item.product-list__item__product-list__item__second::before {
+            background-image: url(/src/images/products/pc-products-icecoffee@2x.jpg);
+        }
 
-            .product-item.third::before {
-                background-image: url(/src/images/products/pc-products-milkshakes@2x.jpg);
-            }
+        .product-list__item.product-list__item__third::before {
+            background-image: url(/src/images/products/pc-products-milkshakes@2x.jpg);
+        }
     }
 }
