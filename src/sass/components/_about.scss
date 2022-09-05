@@ -158,7 +158,7 @@
     height: 100%;
     top: 22px;
     left: 0;
-    background-image: url('../images/phone-cow.jpg');
+    background-image: url('../images/about/phone-cow.jpg');
     background-size: cover;
     border-radius: 50%;
 
@@ -166,14 +166,14 @@
       top: 26px;
       width: 335px;
       height: 330px;
-      background-image: url('../images/tablet-cow.jpg');
+      background-image: url('../images/about/tablet-cow.jpg');
     }
 
     @media screen and (min-width: 1200px) {
       top: 39px;
       width: 490px;
       height: 490px;
-      background-image: url('../images/pc-cow.jpg');
+      background-image: url('../images/about/pc-cow.jpg');
     }
   }
 }
