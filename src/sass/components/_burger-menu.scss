@@ -72,6 +72,10 @@
   }
 }
 
+.mobile-menu-nav__link_dark {
+  color: var(--dark);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu__logo {
     top: 20px;
