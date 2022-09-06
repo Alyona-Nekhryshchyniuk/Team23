@@ -1,6 +1,5 @@
 .contacts {
     background-color: #84A178;
-    padding-bottom: 120px;
 }
 
 .contact-btn-list {
@@ -22,6 +21,10 @@
 }
 
 @media screen and (min-width: 280px) {
+
+    .contacts {
+        padding-bottom: 40px;
+    }
 
     .contact-list {
         display: flex;
@@ -218,6 +221,10 @@
     // .container-contacts {
     //     margin-top: -96px;
     // }
+
+    .contacts {
+        padding-bottom: 120px;
+    }
 
     .contact-list {
         transform: translateY(-94px);
