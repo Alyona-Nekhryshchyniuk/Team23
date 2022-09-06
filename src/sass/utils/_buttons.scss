@@ -110,77 +110,6 @@
   }
 }
 
-.button-buy-now {
-  @extend %flex;
-  gap: 7px;
-  border: none;
-  background-color: var(--chicken);
-
-  &:hover,
-  &:focus {
-    outline: transparent;
-    background-color: var(--hover);
-    color: var(--light);
-  }
-}
-
-.button-buy-now__icon {
-  fill: currentColor;
-}
-
-.button-products {
-  @extend %flex;
-  border: 2px solid var(--chicken);
-  border-radius: 8px;
-  padding: 5px 11px;
-
-  &:hover,
-  &:focus {
-    outline: transparent;
-    border: 2px solid var(--hover);
-    color: var(--light);
-  }}
-
-
-.button-how-its-made {
-  @extend %flex;
-  padding: 7px 11px;
-
-  color: var(--chicken);
-  text-decoration: underline;
-
-
-  &:hover,
-  &:focus {
-    color: var(--hover);
-  }
-
-}
-
-.button-arrow {
-  padding: 0;
-  line-height: 0;
-  border: none;
-  background: transparent;
-}
-
-.button-arrow__icon {
-  width: 80px;
-  height: 40px;
-
-  .button-arrow:hover & {
-    transform: scaleX(1.25) translateX(4px);
-  }
-
-  .button-arrow:focus & {
-    transform: scale(1.25) translate(4px);}}
-
-.button {
-  padding: 12px 34px;
-  @include font(600, 14px, 1.29);
-  transition: background-color 250ms linear, color 250ms linear;
-}
-
 .contact-btn-list__franch,
 .contact-btn-list__loc {
   border-radius: 10px;
@@ -191,7 +120,8 @@
 .contact-btn-list__loc {
   border: none;
   background-color: var(--chicken);
-  transition: background-color 250ms linear, color 250ms linear, fill 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear,
+    fill 250ms linear;
 
   &:focus,
   &:hover {
@@ -228,4 +158,3 @@
     fill: var(--light);
   }
 }
-
