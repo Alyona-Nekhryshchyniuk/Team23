@@ -1,5 +1,6 @@
 @media screen and (max-width: 767px) {
   .footer {
+    padding-bottom: 62px;
     position: relative;
     background-color: var(--khaki);
   }
@@ -132,7 +133,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: 91%;
+      bottom: 120px;
       transform: translateY(-150%);
       left: 0;
       display: block;
@@ -145,6 +146,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
+    padding-bottom: 11px;
     position: relative;
     background-color: var(--khaki);
   }
