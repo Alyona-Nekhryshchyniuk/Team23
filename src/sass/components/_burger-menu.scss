@@ -53,6 +53,10 @@
   line-height: 0;
 }
 
+.mobile-menu-close__icon {
+  fill: var(--light);
+}
+
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
