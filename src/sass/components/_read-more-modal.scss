@@ -7,7 +7,7 @@
     border: 2px solid var(--chicken);
     border-radius: 10px;
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;
     // position: absolute;
     top: 50%;
     left: 50%;
@@ -19,7 +19,7 @@
         padding: 28px;
         width: 280px;
         max-height: 95%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
