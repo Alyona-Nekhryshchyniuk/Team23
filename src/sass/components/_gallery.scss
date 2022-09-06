@@ -1,3 +1,14 @@
+.gallery {
+  margin-top: -24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -160px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -95px;
+  }
+}
 .gallery__picture {
   border-radius: 24px;
   margin: 0 auto;
@@ -14,7 +25,7 @@
 
 @media screen and (min-width: 768px) {
   .gallery:hover .swiper-button-prev,
-  .gallery:hover .swiper-button-next{
-      opacity: 1;
-    }
+  .gallery:hover .swiper-button-next {
+    opacity: 1;
+  }
 }
