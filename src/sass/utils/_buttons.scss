@@ -1,3 +1,9 @@
+.button {
+  padding: 12px 34px;
+  border-radius: 10px;
+  @include font(600, 14px, 1.29);
+  transition: background-color 250ms linear, color 250ms linear;
+}
 
 .button-buy-now {
   @extend %flex;
@@ -13,6 +19,11 @@
   }
 }
 
+.button-buy-now__text {
+  @include font(600, 14px, 1.21);
+  letter-spacing: 0;
+}
+
 .button-buy-now__icon {
   fill: currentColor;
 }
@@ -23,27 +34,46 @@
   border-radius: 8px;
   padding: 5px 11px;
 
+  @include font(600, 8px, 1.25);
+  letter-spacing: 0;
+
+  transition: border 250ms linear, color 250ms linear;
+
   &:hover,
   &:focus {
     outline: transparent;
     border: 2px solid var(--hover);
     color: var(--light);
-  }}
+  }
 
+  @media screen and (min-width: 1200px) {
+    border-radius: 10px;
+    padding: 10px 32px;
+    @include font(600, 14px, 1.29);
+  }
+}
 
 .button-how-its-made {
   @extend %flex;
   padding: 7px 11px;
 
   color: var(--chicken);
-  text-decoration: underline;
 
+  @include font(600, 8px, 1.25);
+  text-decoration: underline;
+  letter-spacing: 0;
+
+  transition: color 250ms linear;
 
   &:hover,
   &:focus {
     color: var(--hover);
   }
 
+  @media screen and (min-width: 1200px) {
+    padding: 12px 21px;
+    @include font(600, 14px, 1.21);
+  }
 }
 
 .button-arrow {
@@ -62,10 +92,6 @@
   }
 
   .button-arrow:focus & {
-    transform: scale(1.25) translate(4px);}}
-
-.button {
-  padding: 12px 34px;
-  @include font(600, 14px, 1.29);
-  transition: background-color 250ms linear, color 250ms linear;
+    transform: scale(1.25) translate(4px);
   }
+}
