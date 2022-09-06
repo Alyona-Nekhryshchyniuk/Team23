@@ -29,6 +29,7 @@
   color: var(--light);
   letter-spacing: 0;
   @include font(700, 16px, 1.25);
+  transition: color 250ms linear;
 
   &:hover,
   &:focus {
