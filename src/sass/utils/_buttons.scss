@@ -3,6 +3,20 @@
   border-radius: 10px;
   @include font(600, 14px, 1.29);
   transition: background-color 250ms linear, color 250ms linear;
+
+  &__svg {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+}
+
+.about__button {
+  position: relative;
+  min-width: 164px;
+  text-align: left;
+  border-color: transparent;
+  background-color: var(--chicken);
 }
 
 .button-buy-now {
