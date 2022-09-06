@@ -194,11 +194,16 @@
 .product-list__item__arrow {
     width: 40px;
     height: 40px;
+
 }
 
+.product-list__item__link:hover .product-list__item__arrow {
+    transform: scaleX(1.25) translateX(4px);
+}
 
-
-
+.product-list__item__link:focus .product-list__item__arrow {
+    transform: scale(1.25) translate(4px);
+}
 
 
 @media screen and (max-width: 767px) {
