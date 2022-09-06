@@ -1,0 +1,33 @@
+.button {
+  position: relative;
+  width: 164px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  background-color: var(--chicken);
+  border-color: transparent;
+  border-radius: 10px;
+  text-align: left;
+
+  @include font($fw: 600, $fs: 14px, $lh: 1.29);
+  color: var(--darkest);
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+  }
+  &:focus {
+    color: var(--light);
+  }
+
+  &__svg--arrow-btn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 12px;
+    height: 12px;
+  }
+}
