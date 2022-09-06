@@ -4,7 +4,7 @@
 @import './utils/buttons';
 @import './utils/modules';
 
-@import './common';
+@import './utils/common';
 @import './components/container';
 @import './components/header';
 @import './components/burger-menu';
@@ -19,5 +19,6 @@
 
 @import './components/buy-now-modal';
 @import './components/read-more-modal';
+@import './components/ingredients-modal';
 @import './components/location-modal';
 @import './components/franchise-modal';
