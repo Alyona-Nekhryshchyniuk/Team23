@@ -51,7 +51,7 @@ dots.forEach((item, indexDot) => {
   });
 });
 
-setInterval(nextSlide, 2500);
+setInterval(nextSlide, 3000);
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
