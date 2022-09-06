@@ -1,0 +1,138 @@
+<div class="backdrop is-hidden" data-modal_buy>
+    <div class="modal-buy-now">
+        <button type="button" class="modal__close" data-modal-close_buy>
+            <svg class="modal-close-icon" width="12px" height="12px">
+                <use href="./images/newSprite.svg#icon-close-btn">
+            </svg>
+        </button>
+        <h3 class="modal-title-buy-now"><b>Buy now</b></h3>
+        <div class="container-products">
+            <ul class="buy-now__list list">
+                <li class="buy-now__item">
+                    <div class="product-item">
+                        <span class="circle-ice-cream">
+                            <picture>
+                                <source 
+                                    media="(min-width: 480px)"
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-icecream.webp   1x,
+                                    ./images/modal/pc-tablet-modal-icecream@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-icecream.jpg     1x,
+                                    ./images/modal/pc-tablet-modal-icecream@2x.jpg   2x"/>
+                                <source 
+                                    media="(max-width: 479px)"
+                                    srcset="
+                                    ./images/modal/phone-modal-icecream.webp   1x,
+                                    ./images/modal/phone-modal-icecream@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/phone-modal-icecream.jpg     1x,
+                                    ./images/modal/phone-modal-icecream@2x.jpg   2x"/>
+                                <img 
+                                    src="/src/images/modal/pc-tablet-modal-icecream@2x.jpg" alt="ice-cream photo"
+                                    sizes="132px" class="photo" />   
+                            </picture>
+                        </span>
+                        <span class="info-ice-cream">
+                            <p class="product-name">ICE CREAM</p>
+                        </span>
+                    </div>
+                </li>
+                <li class="buy-now__item">
+                    <div class="product-item">
+                        <span class="circle-ice-cofe">
+                            <picture>
+                                <source 
+                                    media="(min-width: 480px)"
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-icecoffee.webp   1x,
+                                    ./images/modal/pc-tablet-modal-icecoffee@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-icecoffee.jpg     1x,
+                                    ./images/modal/pc-tablet-modal-icecoffee@2x.jpg   2x"/>
+                                <source 
+                                    media="(max-width: 479px)"
+                                    srcset="
+                                    ./images/modal/phone-modal-icecoffee.webp   1x,
+                                    ./images/modal/phone-modal-icecoffee@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/phone-modal-icecoffee.jpg     1x,
+                                    ./images/modal/phone-modal-icecoffee@2x.jpg   2x"/>
+                                <img 
+                                    src="/src/images/modal/pc-tablet-modal-icecoffee@2x.jpg" alt="ice-cream photo"
+                                    sizes="132px" class="photo" />   
+                            </picture>
+                        </span>
+                        <span class="info-ice-cofe">
+                            <p class="product-name">ICE COFE</p>
+                        </span>
+                    </div>
+                </li>
+                <li class="buy-now__item">
+                    <div class="product-item">
+                        <span class="circle-milkshake">
+                            <picture>
+                                <source 
+                                    media="(min-width: 480px)"
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-milkshake.webp   1x,
+                                    ./images/modal/pc-tablet-modal-milkshake@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/pc-tablet-modal-milkshake.jpg     1x,
+                                    ./images/modal/pc-tablet-modal-milkshake@2x.jpg   2x"/>
+                                <source 
+                                    media="(max-width: 479px)"
+                                    srcset="
+                                    ./images/modal/phone-modal-milkshake.webp   1x,
+                                    ./images/modal/phone-modal-milkshake@2x.webp   2x"
+                                    type="image/webp"/>
+                                <source media="(min-width: 480px)" 
+                                    srcset="
+                                    ./images/modal/phone-modal-milkshake.jpg     1x,
+                                    ./images/modal/phone-modal-milkshake@2x.jpg   2x"/>
+                                <img 
+                                    src="/src/images/modal/pc-tablet-modal-milkshake@2x.jpg" alt="ice-cream photo"
+                                    sizes="132px" class="photo" />   
+                            </picture>
+                        </span>
+                        <span class="info-milkshake">
+                            <p class="product-name">MILKSHAKE</p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-info">
+            <form autocomplete="off">
+                <div class="modal-field-buy">
+                    <div class="modal-input-wrap-buy">
+                        <input class="modal-input-buy" type="text" name="name" id="name" required placeholder="Name">
+                    </div>
+                </div>
+                <div class="modal-field-buy">
+                    <div class="modal-input-wrap-buy">
+                        <input class="modal-input-buy" type="tel" name="tel" id="tel" required placeholder="Phone">
+                    </div>
+                </div>
+                <div class="modal-textarea-buy">
+                    <textarea class="modal-textarea-input-buy modal-input-buy" name="comment" id="comment" rows="10"
+                        placeholder="Comment"></textarea>
+                </div>
+
+                <button type="submit" class="modal-button-buy">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
