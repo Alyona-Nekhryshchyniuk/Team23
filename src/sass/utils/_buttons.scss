@@ -3,12 +3,20 @@
   border-radius: 10px;
   @include font(600, 14px, 1.29);
   transition: background-color 250ms linear, color 250ms linear;
+  background-color: var(--chicken);
 
   &__svg {
     position: absolute;
     top: 15px;
     right: 30px;
     fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+    outline: transparent;
+    color: var(--light);
   }
 }
 
@@ -17,27 +25,16 @@
   min-width: 164px;
   text-align: left;
   border-color: transparent;
-  background-color: var(--chicken);
-  transition: background-color 250ms linear, color 250ms linear;
-
-  &:hover,
-  &:focus {
-    outline: transparent;
-    background-color: var(--hover);
-    color: var(--light);
-  }
 }
 
 .button-buy-now {
   @extend %flex;
   gap: 7px;
   border: none;
-  background-color: var(--chicken);
 
   &:hover,
   &:focus {
     outline: transparent;
-    background-color: var(--hover);
     color: var(--light);
   }
 }
@@ -128,16 +125,7 @@
 
 .contact-btn-list__loc {
   border: none;
-  background-color: var(--chicken);
-  transition: background-color 250ms linear, color 250ms linear,
-    fill 250ms linear;
-
-  &:focus,
-  &:hover {
-    outline: transparent;
-    background-color: var(--hover);
-    color: var(--light);
-  }
+  transition: fill 250ms linear;
 }
 
 .contact-btn-list__loc-icon {
