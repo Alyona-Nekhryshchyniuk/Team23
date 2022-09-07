@@ -1,47 +1,4 @@
-// all modal
 
-.backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    transition: opacity 1000ms, visibility 1000ms;
-}
-
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal__close {
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-color: transparent;
-    position: fixed;
-    color: var(--darkest);
-    top: 20px;
-    right: 20px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (max-width: 479px) {
-        width: 16px;
-        height: 16px;
-        top: 8px;
-        right: 8px;
-    }
-}
-
-// all modal
 
 
 .modal-ingridient {
