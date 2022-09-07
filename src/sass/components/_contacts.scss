@@ -1,287 +1,282 @@
 .contacts {
-    background-color: #84A178;
+  background-color: #84a178;
 }
 
 .contact-btn-list {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 280px) and (max-width: 767px) {
-    .contact-list {
-        flex-direction: column;
-    }
+  .contact-list {
+    flex-direction: column;
+  }
 
-    .contact-btn-list {
-        flex-direction: column;
-    }
-
+  .contact-btn-list {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 280px) {
+  .contacts {
+    padding-bottom: 40px;
+  }
 
-    .contacts {
-        padding-bottom: 40px;
+  .contact-list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: -313px;
+    transform: translateY(-345px);
+  }
+
+  .contact-list__item {
+    padding: 40px 32px;
+    background: #fcfcfc;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-list__loc-type {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--light);
+    background-color: var(--chicken);
+    padding: 0 22px;
+    border-radius: 4px;
+  }
+
+  .contact-list__city-comp-address {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .contact-list__city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: var(--darkest);
+    margin-bottom: 8px;
+  }
+
+  .contact-list__company-address {
+    display: grid;
+    grid-template-columns: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: var(--bright);
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    .contact-list {
-        display: flex;
-        gap: 20px;
-        margin-bottom: -313px;
-        transform: translateY(-345px);
+  .contact-list__days-hours {
+    padding: 24px 0;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  .contact-list__week-days {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    color: var(--darkest);
+  }
+
+  .contact-list__hours {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    color: #ababab;
+  }
+
+  .contact-list__hours:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .contact-list__email-number {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  .contact-list__email,
+  .contact-list__phone-number {
+    // @include font(500, 12px, calc(18 / 12));
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: var(--dark);
+
+    &:hover {
+      text-decoration: underline;
     }
-    
-    .contact-list__item {
-        padding: 40px 32px;
-        background: #FCFCFC;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        width: 100%;
-    }
+  }
 
-    .contact-list__loc-type {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(22 / 12);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: var(--light);
-        background-color: var(--chicken);
-        padding: 0 22px;
-        border-radius: 4px;
-    }
-
-    .contact-list__city-comp-address {
-        padding-top: 20px;
-        padding-bottom: 24px;
-
-    }
-
-    .contact-list__city {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(22 / 12);
-        letter-spacing: 0.04em;
-        color: var(--darkest);
-        margin-bottom: 8px;
-    }
-
-    .contact-list__company-address {
-        display: grid;
-        grid-template-columns: auto;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(22 / 12);
-        letter-spacing: 0.04em;
-        color: var(--bright);
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .contact-list__days-hours {
-        padding: 24px 0;
-        width: 100%;
-        border-bottom: 1px solid #E1E1E1;
-        border-top: 1px solid #E1E1E1;
-    }
-
-    .contact-list__week-days {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(22 / 12);
-        color: var(--darkest);
-    }
-
-    .contact-list__hours {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(22 / 12);
-        color: #ABABAB;
-    }
-
-    .contact-list__hours:not(:last-child) {
-        margin-bottom: 8px;
-    }
-
-    .contact-list__email-number {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
-    }
-
-    .contact-list__email ,
-    .contact-list__phone-number {
-        // @include font(500, 12px, calc(18 / 12));
-        font-weight: 500;
-        font-size: 12px;
-        line-height: calc(18 / 12);
-        color: var(--dark);
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    // .contact-list__hours,
-    // .contact-list__week-days,
-    // .contact-list__company-address,
-    // .contact-list__city,
-    // .contact-list__loc-type {
-    //     @include font(500, 12px, calc(22 / 12));
-    // }
+  // .contact-list__hours,
+  // .contact-list__week-days,
+  // .contact-list__company-address,
+  // .contact-list__city,
+  // .contact-list__loc-type {
+  //     @include font(500, 12px, calc(22 / 12));
+  // }
 }
 
 @media screen and (min-width: 768px) {
+  // .container-contacts {
+  //     margin-top: -304px;
+  // }
 
-    // .container-contacts {
-    //     margin-top: -304px;
-    // }
+  .contact-list {
+    transform: translateY(-304px);
+    gap: 16px;
+    margin-bottom: -244px;
+  }
 
-    .contact-list {
-        transform: translateY(-304px);
-        gap: 16px;
-        margin-bottom: -244px;
-    }
-    
-    .contact-list__item {
-        padding: 40px 24px;
-    }
-    
-    .contact-list__loc-type {
-        color: var(--dark);
-        font-size: 16px;
-        line-height: calc(30 / 16);
-        padding: 0 12px;
-    }
+  .contact-list__item {
+    padding: 40px 24px;
+  }
 
-    .contact-list__city-comp-address {
-        padding-top: 30px;
-        padding-bottom: 26px;
-    }
+  .contact-list__loc-type {
+    color: var(--dark);
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    padding: 0 12px;
+  }
 
-    .contact-list__city {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-        margin-bottom: 12px;
-    }
+  .contact-list__city-comp-address {
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
 
-    .contact-list__company-address {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  .contact-list__city {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    margin-bottom: 12px;
+  }
 
-    .contact-list__days-hours {
-        padding: 32px 0;
-    }
+  .contact-list__company-address {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    .contact-list__week-days {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  .contact-list__days-hours {
+    padding: 32px 0;
+  }
 
-    .contact-list__hours {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  .contact-list__week-days {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    .contact-list__hours:not(:last-child) {
-        margin-bottom: 12px;
-    }
+  .contact-list__hours {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    .contact-list__email-number {
-        margin-top: 32px;
-    }
+  .contact-list__hours:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
-    .contact-list__email ,
-    .contact-list__phone-number {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
+  .contact-list__email-number {
+    margin-top: 32px;
+  }
 
-    // .contact-list__hours,
-    // .contact-list__week-days,
-    // .contact-list__company-address,
-    // .contact-list__city,
-    // .contact-list__loc-type {
-    //     @include font(500, 14px, calc(26 / 14));
-    // }
+  .contact-list__email,
+  .contact-list__phone-number {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  // .contact-list__hours,
+  // .contact-list__week-days,
+  // .contact-list__company-address,
+  // .contact-list__city,
+  // .contact-list__loc-type {
+  //     @include font(500, 14px, calc(26 / 14));
+  // }
 }
 
 @media screen and (min-width: 1200px) {
+  // .container-contacts {
+  //     margin-top: -96px;
+  // }
 
-    // .container-contacts {
-    //     margin-top: -96px;
-    // }
+  .contacts {
+    padding-bottom: 120px;
+  }
 
-    .contacts {
-        padding-bottom: 120px;
-    }
+  .contact-list {
+    transform: translateY(-94px);
+    gap: 32px;
+    margin-bottom: -32px;
+  }
 
-    .contact-list {
-        transform: translateY(-94px);
-        gap: 32px;
-        margin-bottom: -32px;
-    }
-    
-    .contact-list__item {
-        padding: 40px;
-    }
-    
-    .contact-list__loc-type {
-        color: var(--dark);
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  .contact-list__item {
+    padding: 40px;
+  }
 
-    .contact-list__city-comp-address {
-        padding:32px 0;
-    }
+  .contact-list__loc-type {
+    color: var(--dark);
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 
-    .contact-list__city {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-        margin-bottom: 8px;
-    }
+  .contact-list__city-comp-address {
+    padding: 32px 0;
+  }
 
-    .contact-list__company-address {
-        // @include font(500, 16px, calc(29 / 16));
-        font-size: 16px;
-        line-height: calc(29 / 16);
-    }
+  .contact-list__city {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 8px;
+  }
 
-    .contact-list__week-days {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  .contact-list__company-address {
+    // @include font(500, 16px, calc(29 / 16));
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 
-    .contact-list__hours {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  .contact-list__week-days {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 
-    .contact-list__hours:not(:last-child) {
-        margin-bottom: 12px;
-    }
+  .contact-list__hours {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 
-    .contact-list__email ,
-    .contact-list__phone-number {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-    }
+  .contact-list__hours:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
-    // .contact-list__hours,
-    // .contact-list__week-days,
-    // .contact-list__city,
-    // .contact-list__loc-type {
-    //     @include font(500, 16px, calc(30 / 16));
-    // }
+  .contact-list__email,
+  .contact-list__phone-number {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+
+  // .contact-list__hours,
+  // .contact-list__week-days,
+  // .contact-list__city,
+  // .contact-list__loc-type {
+  //     @include font(500, 16px, calc(30 / 16));
+  // }
 }
