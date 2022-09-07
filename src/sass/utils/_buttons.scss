@@ -8,6 +8,7 @@
     position: absolute;
     top: 15px;
     right: 30px;
+    fill: currentColor;
   }
 }
 
@@ -17,6 +18,14 @@
   text-align: left;
   border-color: transparent;
   background-color: var(--chicken);
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    background-color: var(--hover);
+    color: var(--light);
+  }
 }
 
 .button-buy-now {
@@ -125,16 +134,14 @@
 
   &:focus,
   &:hover {
+    outline: transparent;
     background-color: var(--hover);
-  }
-
-  &:focus {
     color: var(--light);
   }
+}
 
-  &:focus .contact-btn-list__loc-icon {
-    fill: var(--light);
-  }
+.contact-btn-list__loc-icon {
+  fill: currentColor;
 }
 
 .contact-btn-list__franch {
@@ -147,14 +154,12 @@
 
   &:focus,
   &:hover {
+    outline: transparent;
     border-color: var(--hover);
-  }
-
-  &:focus {
     color: var(--light);
   }
+}
 
-  &:focus .contact-btn-list__franch-icon {
-    fill: var(--light);
-  }
+.contact-btn-list__franch-icon {
+  fill: currentColor;
 }
